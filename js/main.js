@@ -22,3 +22,15 @@ const images = [
     }
 ];
 
+// variabile che parte da 0
+let i = 0;
+//  costante che contiene l'array intero
+const allImages = images.length;
+
+// varie costanti che collegano gli elementi del js all'html
+const newImage = document.getElementById('image');
+const newTitle = document.getElementById('text-1');
+const newText = document.getElementById('text-2');
+
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
