@@ -34,3 +34,11 @@ const newText = document.getElementById('text-2');
 
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
+
+// per permettere di cambiare titolo immagine e descrizione
+const show = (index) => {
+    const { image, title, text } = images[index];
+    newImage.src = image;
+    newTitle.textContent = title;
+    newText.textContent = text;
+}
