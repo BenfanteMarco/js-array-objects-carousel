@@ -42,3 +42,15 @@ const show = (index) => {
     newTitle.textContent = title;
     newText.textContent = text;
 }
+
+// per poter cambiare una ad una avanti e indietro
+prev.addEventListener('click', () => {
+    i = (i - 1 + allImages) % allImages;
+    show(i);
+})
+
+next.addEventListener('click', () => {
+    i = (i + 1) % allImages;
+    show(i);
+})
+
